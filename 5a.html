@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head style="">
+    <title>Томский симуляционный центр</title>
+    <meta content='10ый кабинет' name='description'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pannellum/pannellum.css"/>
+    <script type="text/javascript" src="pannellum/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1000px;
+        height: 400px;
+        border-style: none;
+    }
+    </style>
+</head>
+<body>
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "hotSpotDebug": true,
+    "default": {
+        "autoLoad": true,
+        "firstScene": "main room",
+        // "sceneFadeDuration": 1000
+    },
+    "scenes": {
+      "main room": {
+       // "type": "equirectangular",
+        "panorama": "5a.png",
+        "title": "10tour",
+        "pitch": 0,
+        "yaw": -45,
+        "vaov": "54.15",
+      }
+    }
+});
+</script>
+
+</body>
+</html>
